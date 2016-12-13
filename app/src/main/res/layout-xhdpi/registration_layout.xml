@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+ <!--   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="Social\nFragment"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="androidbelieve.com"
+        android:textColor="#000"
+        android:layout_below="@+id/textView"
+        android:textStyle="italic"/>
+
+-->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="#004F81"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="7dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="Sponser Details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:text=" *Sponsor Code"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:padding="5dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:id="@+id/edt_sponser_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:text=" Sponsor Name"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:padding="5dp"
+                android:visibility="gone"
+                android:id="@+id/edt_sponser_name"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="*User ID"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+
+                android:padding="5dp"
+                android:id="@+id/edt_userid_regis"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:id="@+id/tv_userid"
+                android:visibility="gone"
+                android:text=""
+                android:textColor="@color/green"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="*Password"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:id="@+id/edt_password_reg"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:text="*Confirm Password"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:id="@+id/edt_confirm_password"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <!--<....................................end personal Detail.............................-->
+
+        <LinearLayout
+            android:background="#004F81"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="7dp"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:text="Personal Details"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="*First Name"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:padding="5dp"
+                android:id="@+id/edt_firstname"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="*Mobile No"
+                android:textColor="@color/lite_dark_blue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:inputType="number"
+                android:padding="5dp"
+                android:id="@+id/edt_registraion_mobileno"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/edt_border"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+     <!--   <......................................button..................-->
+
+
+        <LinearLayout
+            android:layout_marginBottom="90dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp">
+
+            <Button
+                android:id="@+id/btn_reg_submit"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg"
+                android:text="Submit"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        <!--    <Button
+                android:id="@+id/btn_reg_reset"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bg_red"
+                android:text="Reset"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

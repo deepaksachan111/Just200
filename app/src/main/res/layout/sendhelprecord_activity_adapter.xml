@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_sn_sendrecord"
+                android:layout_weight="1"
+                android:text="S.No"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="12dp"
+                android:id="@+id/tv_s_associateid"
+                android:layout_weight=".7"
+                android:text="AssociateID"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:textSize="12dp"
+                android:id="@+id/tv_s_associatename"
+                android:layout_weight="1"
+                android:text="AssociateName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:textSize="12dp"
+                android:id="@+id/tv_s_sendamount"
+                android:layout_weight=".6"
+                android:text="SendAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_s_transid"
+                android:layout_weight="1"
+                android:text="Transaction id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="right"
+                android:textSize="12dp"
+                android:id="@+id/tv_s_senddate"
+                android:layout_weight=".7"
+                android:text="Send Date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_s_status"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:text="Status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>

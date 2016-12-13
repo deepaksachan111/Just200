@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#11000000"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <!--
+            <Button
+                android:id="@+id/btn_dsahboard_shinemission"
+                android:layout_margin="10dp"
+                android:gravity="bottom"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shinemission99"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/image_dsahboard"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/user_user"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardElevation="4dp"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:textSize="24sp"
+                android:id="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/holo_blue_dark"
+                android:text="Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:padding="20dp"
+                android:orientation="horizontal"
+                android:elevation="4dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/dashboard_username"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:text="User Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/dashboard_userid"
+                        android:text="userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#11000000"/>
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dasboard_mobile"
+                            android:gravity="right"
+                            android:text="mobile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+
+
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#11000000"/>
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Stater Plan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dasboard_starterplan"
+                            android:gravity="right"
+                            android:text="starter plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#11000000"/>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#11000000"/>
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Middle Level Plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dasboard_middle_level_plan"
+
+                            android:gravity="right"
+                            android:text="middle plan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#11000000"/>
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Registration Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/dasboard_registrationDate"
+
+                            android:gravity="right"
+                            android:text=""
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_dash_sendrecords"
+                android:layout_margin="1dp"
+                android:textSize="12dp"
+                android:textColor="#fff"
+                android:padding="5dp"
+                android:minHeight="0dp"
+                android:maxHeight="0dp"
+                android:background="@color/blueIndigo"
+                android:layout_weight="1"
+                android:text="Send Help Report"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+            <Button
+                android:textSize="12dp"
+                android:id="@+id/btn_dash_receiverecords"
+                android:layout_margin="1dp"
+                android:textColor="#fff"
+                android:background="@color/blueIndigo"
+                android:padding="5dp"
+                android:minHeight="0dp"
+                android:maxHeight="0dp"
+                android:layout_weight="1"
+                android:text="Receive Help Report"
+                android:layout_width="0dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/red"
+            android:id="@+id/linear_addheader_getsend_record"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_marginBottom="50dp"
+            android:divider="#435966"
+            android:dividerHeight="1px"
+            android:layout_marginTop="5dp"
+            android:id="@+id/listview_dashboard_senderrecords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+
+
+
+
+        <LinearLayout
+            android:background="@color/red"
+            android:id="@+id/linear_addheader_getrecevier_record"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_marginBottom="10dp"
+            android:divider="#435966"
+            android:dividerHeight="1px"
+            android:layout_marginTop="5dp"
+            android:id="@+id/listview_dashboard_receiverrecords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

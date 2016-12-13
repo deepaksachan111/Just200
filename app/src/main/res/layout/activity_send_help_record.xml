@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:padding="5dp"
+            android:textColor="#B94A48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Date*"
+            android:textSize="19sp"/>
+
+        <EditText
+            android:focusable="false"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:id="@+id/edt_select_fromdate_send"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittextborder"
+            android:paddingLeft="7dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <TextView
+                android:padding="5dp"
+                android:textColor="#B94A48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To Date*"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:focusable="false"
+                android:drawableRight="@android:drawable/ic_menu_my_calendar"
+                android:id="@+id/edt_select_todate_send"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextborder"
+                android:paddingLeft="7dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:id="@+id/edt_amount_send"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittextborder"
+            android:hint="Amount"
+            android:paddingLeft="7dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <Button
+        android:layout_weight="1"
+        android:textColor="#fff"
+        android:maxHeight="0dp"
+        android:minHeight="0dp"
+        android:background="@drawable/button_bg_red"
+        android:layout_marginTop="20dp"
+        android:text="Get Report"
+        android:id="@+id/btn_sendhelprecord"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+
+            <Button
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:maxHeight="0dp"
+                android:minHeight="0dp"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="20dp"
+                android:text="Reset"
+                android:id="@+id/btn_sendhelprecord_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="S.No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_weight=".7"
+                        android:text="AssociateID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:text="AssociateName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:layout_weight=".6"
+                        android:text="SendAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:text="Transaction id"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:gravity="right"
+                        android:textSize="12dp"
+                        android:layout_weight=".5"
+                        android:text="SendDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:layout_weight="1"
+                        android:text="Status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ListView
+            android:layout_marginBottom="5dp"
+            android:id="@+id/lst_sendhelprecords"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></ListView>
+    </LinearLayout>
+</ScrollView>
